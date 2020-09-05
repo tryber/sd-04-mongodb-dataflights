@@ -3,7 +3,6 @@ db.resumoVoos.insertOne({
   "totalVoosDomesticos": db.voos.count({
     "natureza": "Doméstica",
     "empresa.nome": "LATAM AIRLINES BRASIL"
-    
   })
 });
 
