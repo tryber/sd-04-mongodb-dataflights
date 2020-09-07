@@ -8,8 +8,8 @@
 
 // Em uma segunda query, retorne a empresa e o totalVoosDomesticos do primeiro documento presente na coleção resumoVoos em que a empresa seja PASSAREDO.
 
-db.voos.count({ $and: [{ "empresa.nome": "PASSAREDO"}, {"natureza": "Doméstica"}] });
+// db.voos.count({ $and: [{ "empresa.nome": "PASSAREDO"}, {"natureza": "Doméstica"}] });
 
-db.resumoVoos.insertOne({"empresa": "PASSAREDO", "totalVoosDomesticos": {}});
+db.resumoVoos.insertOne({"empresa": "PASSAREDO", "totalVoosDomesticos": db.voos.count( { $and: [ { "empresa.nome": "PASSAREDO"}, {"natureza": "Doméstica"} ] } ) } );
 
 db.resumoVoos.findOne({"empresa": "PASSAREDO"}, {"_id": 0});
