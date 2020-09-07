@@ -2,7 +2,7 @@
 
 db.voos.find({
   rtk: {
-    $exists: false
+    $exists: !true
   }
 },
 {
