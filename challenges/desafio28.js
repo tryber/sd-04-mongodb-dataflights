@@ -7,3 +7,6 @@
 // Em uma segunda query, retorne a empresa e o totalVoosDomesticos do primeiro documento presente na coleção resumoVoos em que a empresa seja LATAM AIRLINES BRASIL.
 
 db.voos.count( { $and: [{"empresa.nome": "LATAM AIRLINES BRASIL"}, {"natureza": "Doméstica"}]});
+
+
+db.resumoVoos.findOne({"empresa": "LATAM AIRLINES BRASIL"}, {"_id": 0});
