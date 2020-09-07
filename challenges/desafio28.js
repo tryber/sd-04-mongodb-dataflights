@@ -16,6 +16,6 @@ db.resumoVoos.insert({
 db.resumoVoos.find({
   empresa: "LATAM AIRLINES BRASIL"
   },{
-    empresa: 1, totalVoosDomesticos: 1, _id: 0
+    totalVoosDomesticos: 1, empresa: 1, _id: 0
     }
 ).limit(1);
