@@ -10,8 +10,8 @@
 
 // db.voos.count({ $and: [{ "empresa.nome": "PASSAREDO"}, {"natureza": "Doméstica"}] });
 
-//db.voos.find({ "empresa.nome": "PASSAREDO"}, {"natureza": "Doméstica"})
+//db.voos.find({ "empresa.nome": "PASSAREDO"}, {"natureza": "Doméstica"}).count()
 
-db.resumoVoos.insert({"empresa": "PASSAREDO", "totalVoosDomesticos": db.voos.find({ "empresa.nome": "PASSAREDO"}, {"natureza": "Doméstica"}).count() } );
+db.resumoVoos.insert({"empresa": "PASSAREDO", "totalVoosDomesticos": db.voos.find( { $and: [ {"empresa.nome": "PASSAREDO"}, {"natureza": "Doméstica"} ] } ).count() } );
 
 db.resumoVoos.findOne({"empresa": "PASSAREDO"}, {"_id": 0});
