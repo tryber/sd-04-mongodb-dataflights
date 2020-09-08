@@ -1,6 +1,6 @@
 db.voos
   .find(
-    { ano: 2017 },
+    { ano: 2017, "empresa.nome": "GOL" },
     {
       vooId: true,
       "empresa.nome": true,
