@@ -1,10 +1,10 @@
 #!/bin/bash
 
-if [[ -z "$(command -v C:\\Program Files\\MongoDB\\Server\\4.4\\bin\\mongo.exe)" ]]
-then
-    printf "You must have mongo installed in your machine"
-    exit
-fi
+# if [[ -z "$(command -v mongo)" ]]
+# then
+#     printf "You must have mongo installed in your machine"
+#     exit
+# fi
 
 export DBNAME=dataFlights
 

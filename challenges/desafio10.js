@@ -8,4 +8,4 @@ db.voos.find({
   "aeroportoDestino.nome": 1,
   mes: 1,
   ano: 1
-}).count();
+}).limit(10);
