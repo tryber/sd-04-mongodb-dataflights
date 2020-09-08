@@ -1,4 +1,5 @@
-.find(
+db.voos
+  .find(
     {
       $and: [
         { litrosCombustivel: { $exists: true } },
