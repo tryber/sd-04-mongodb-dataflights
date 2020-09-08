@@ -1,5 +1,5 @@
 db.voos
   .find({
-    "aeroportoDestino.pais": { $nin: [/BRASIL/, /ARGENTINA/, /CHILE/] },
+    "aeroportoDestino.pais": { $in: [/BRASIL/, /ARGENTINA/, /CHILE/] },
   })
   .count();
