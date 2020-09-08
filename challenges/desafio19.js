@@ -1,1 +1,1 @@
-db.voos.find({litrosCombustivel: {$exists: 1}}, {vooId: 1}).sort({litrosCombustivel: 1}).limit(1);
+db.voos.find({litrosCombustivel: {$exists: 1}}, {vooId: 1, _id: 0}).limit(1);

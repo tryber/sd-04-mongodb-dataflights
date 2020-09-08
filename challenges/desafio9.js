@@ -1,1 +1,1 @@
-db.voos.find({ano: { $eq: 2017, $eq: 2018}}).count();
+db.voos.find({$or:[{ano: { $eq: 2017}},{ano: {$eq: 2018}}]}).count();
