@@ -2,10 +2,9 @@
 db.voos
   .find(
     {
-      litrosCombustivel: { $ngt: 600 },
-      litrosCombustivel: { $exists: 1 },
+      "litrosCombustivel": { $ngt: 600, $exists: 1 },
       "empresa.nome": { $nin: ["GOL", "AZUL"] },
     },
-    { vooId: 1, _id: 0, litrosCombustivel: 1, "empresa.nome": 1 }
+    { "vooId": 1, "empresa.nome": 1,  "litrosCombustivel": 1, "_id": 0 }
   )
   .limit(1);
