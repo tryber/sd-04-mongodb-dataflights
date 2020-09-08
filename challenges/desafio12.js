@@ -1,1 +1,1 @@
-db.voos.count( { "aeroportoDestino.pais": { $in: ["BRASIL", "ARGENTINA", "CHILE"] } });
+db.voos.count( { decolagens: { $gt: 20 } });
