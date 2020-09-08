@@ -1,7 +1,9 @@
 // Primeira query
+NUMERO_TOTAL_DE_VOOS = db.voos.find({"empresa.nome": "LATAM AIRLINES BRASIL", "natureza": "Doméstica"}).count();
+
 db.resumoVoos.insertOne({
   "empresa": "LATAM AIRLINES BRASIL",
-  "totalVoosDomesticos": db.voos.find({"empresa.nome": "LATAM AIRLINES BRASIL", "natureza": "Doméstica"}).count()
+  "totalVoosDomesticos": NUMERO_TOTAL_DE_VOOS
 });
 
 // Segunda Query
