@@ -1,1 +1,1 @@
-// Inicio de projeto
+db.voos.count();
