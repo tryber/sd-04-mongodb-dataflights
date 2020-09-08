@@ -1,1 +1,1 @@
-dataFlights> db.voos.count({natureza: {$in: ["Doméstica"]}});
+db.voos.count({natureza:"Doméstica"});
