@@ -11,4 +11,4 @@ fi
 BSON_PATH=$1
 
 # Restore collection
-mongorestore --maintainInsertionOrder --db "$DBNAME" "$BSON_PATH"
+"C:\Program Files\MongoDB\Server\4.4\bin\mongorestore.exe" --maintainInsertionOrder --db "$DBNAME" "$BSON_PATH"

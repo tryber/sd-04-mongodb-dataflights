@@ -11,4 +11,4 @@ fi
 mql=$1
 
 # Exec MQL
-mongo $DBNAME --quiet --eval "DBQuery.shellBatchSize = 100000; DBQuery.prototype._prettyShell = true; $mql"
+"C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe" $DBNAME --quiet --eval "DBQuery.shellBatchSize = 100000; DBQuery.prototype._prettyShell = true; $mql"

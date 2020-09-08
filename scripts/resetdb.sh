@@ -11,7 +11,7 @@ fi
 DB_RESTORE_DIR=$1
 
 # Reset DB
-mongo "$DBNAME" --quiet --eval 'db.dropDatabase()'
+"C:\Program Files\MongoDB\Server\4.4\bin\mongo.exe" "$DBNAME" --quiet --eval 'db.dropDatabase()'
 
 scripts/join_splitted_files.sh "$DB_RESTORE_DIR"
 
