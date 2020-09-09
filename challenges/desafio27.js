@@ -1,5 +1,5 @@
 passaredoVoos = db.voos.find({
-    natureza: "Domestica",
+    natureza: "Doméstica",
     "empresa.nome": "PASSAREDO",
   }).count();
 
@@ -8,4 +8,4 @@ db.resumoVoos.insertOne({
   totalVoosDomesticos: passaredoVoos,
 });
 
-db.resumoVoos.find({});
+db.resumoVoos.find({}, {_id: 0, empresa: 1, totalVoosDomesticos: 1});
