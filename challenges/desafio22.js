@@ -1,5 +1,5 @@
 db.voos
-.find(
+.findOne(
   {
     $and: [
       { "empresa.nome": { $in: ["DELTA AIRLINES", "AMERICAN AIRLINES"] } },
@@ -8,5 +8,4 @@ db.voos
     ],
   },
   { vooId: 1, _id: 0 }
-)
-.limit(1);
+);
