@@ -1,4 +1,4 @@
-passaredoVoos = db.voos.find({
+const passaredoVoos = db.voos.find({
     natureza: "Doméstica",
     "empresa.nome": "PASSAREDO",
   }).count();
