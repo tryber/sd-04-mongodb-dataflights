@@ -15,4 +15,3 @@ db.voos.find(
       ano: 1
     }
   ).limit(10).pretty();
-  
