@@ -1,6 +1,6 @@
 db.voos.find(
   {
-    "passageiros.pagos": "700"
+    "passageiros.pagos": 7000
   },
   {
     vooId: 1,
