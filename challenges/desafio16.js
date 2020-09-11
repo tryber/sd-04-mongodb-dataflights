@@ -1,1 +1,1 @@
-db.voos.find({ natureza: "Internacional" });
+db.voos.count({ natureza: "Internacional" });

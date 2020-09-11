@@ -1,4 +1,4 @@
-db.voos.findOne(
+db.voos.find(
   {
     "passageiros.pagos": "700"
   },
@@ -8,4 +8,4 @@ db.voos.findOne(
     ano: 1,
     _id: 0
   }
-);
+).limit(1);
