@@ -1,11 +1,11 @@
-TOTAL_LATAM = db.voos.find({
+qtylatam = db.voos.find({
   "empresa.nome": "LATAM AIRLINES BRASIL",
   "natureza": "Doméstica"
 }).count();
 
 db.resumoVoos.insert({
   "empresa": "LATAM AIRLINES BRASIL",
-  "totalVoosDomesticos": TOTAl_LATAM
+  "totalVoosDomesticos": qtylatam
 });
 
-db.resumoVoos.findOne({ "empresa": "LATAM AIRLINES BRASIL" }, { "_id": 0 });
+db.resumoVoos.find({ "empresa": "LATAM AIRLINES BRASIL" }, { "_id": 0 });
