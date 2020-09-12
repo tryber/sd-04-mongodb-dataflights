@@ -1,7 +1,7 @@
 db.voos.findOne({
   $and: [
     { "empresa.nome": { $nin: ["GOL", "AZUL"] } },
-    { "litrosCombustivel": { $lte: 1000 } },
+    { "litrosCombustivel": { $lte: 600 } },
     { "litrosCombustivel": { $exists: true } }
   ]
 }, {
