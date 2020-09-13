@@ -6,6 +6,6 @@ const domesticFlighs = {
   }),
 };
 
-db.voos.insertOne({ empresa: domesticFlighs.empresa,  totalVoosDomesticos: domesticFlighs.flights});
+db.resumoVoos.insertOne({ empresa: domesticFlighs.empresa,  totalVoosDomesticos: domesticFlighs.flights});
 
 db.resumoVoos.find({}, { _id: 0 });
