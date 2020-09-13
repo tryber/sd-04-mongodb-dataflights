@@ -1,1 +1,1 @@
-db.voos.countDocuments({ ano: { $gt: 2017 } });
+db.voos.countDocuments({ ano: { $gt: 2016 } });
