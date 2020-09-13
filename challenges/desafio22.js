@@ -9,4 +9,3 @@ db.voos.findOne(
   { _id: 0, vooId: 1 }
 );
 
-db.voos.findOne();
