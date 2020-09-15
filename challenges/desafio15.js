@@ -1,0 +1,3 @@
+db.voos.find({decolagens:{$gt:20}}).count()
+/*Desafio 15
+Retorne o total de voos com mais de 20 decolagens.*/
