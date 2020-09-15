@@ -1,0 +1,3 @@
+db.voos.findOne({"litrosCombustivel":{$gt:1000}},{"vooId":1,"_id":0})
+/*Desafio 21
+Retorne o vooId do primeiro voo em que o campo litrosCombustivel seja maior ou igual a 1000. */
