@@ -1,7 +1,7 @@
 // const flights = db.voos.find({"empresa.nome": "PASSAREDO", "natureza": "Doméstica"}).count();
 // db.resumoVoos.insert({ "empresa": "PASSAREDO", "totalVoosDomesticos": flights });
 
-db.resumoVoos.insert({ 
+db.resumoVoos.insertOne({ 
   "empresa": "PASSAREDO", 
   "totalVoosDomesticos": db.voos.find({"empresa.nome": "PASSAREDO", "natureza": "Doméstica"}).count()
 });
