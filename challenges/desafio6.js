@@ -1,1 +1,1 @@
-db.voos.find({},{"vooId": true, "_id": false}).skip(9).limit(3);
+db.voos.find({"vooId": 756807},{"empresa.sigla": true, "empresa.nome": true, "passageiros": true , "_id": false});
